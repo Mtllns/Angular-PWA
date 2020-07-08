@@ -1,10 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { AppComponent } from './app.component';
 import { PaisComponent } from './pages/pais/pais.component';
 import { PaisesComponent } from './pages/paises/paises.component';
 import { AppRoutingModule } from './app-routing.module';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
