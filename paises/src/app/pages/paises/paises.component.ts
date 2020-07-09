@@ -15,7 +15,7 @@ export class PaisesComponent implements OnInit {
     public paisService: PaisesService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.paisService.getPaises()
       .then( paises => this.paises = paises );
   }
